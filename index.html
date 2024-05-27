@@ -1,1 +1,55 @@
-wallet
+<div id="videoBackground">
+  <video style="object-fit: cover; background-size: cover; width: 100%; height: 100%;" preload="auto" playsinline autoplay loop muted>
+    <source src="https://dl.dropboxusercontent.com/s/5qym13usc9vu20z/ezgif.com-resize.mp4?dl=0" type="video/mp4">
+  </video>
+</div>
+
+<script>
+$(document).ready(() => {
+  let width = $(window).width();
+  let height = $(window).height();
+  $("#videoBackground")
+    .width(width)
+    .height(height);
+});
+
+$(window).resize(() => {
+  let width = $(window).width();
+  let height = $(window).height();
+  $("#videoBackground")
+    .width(width)
+    .height(height);
+});
+</script>
+Добавляем видео с пропорциональным изменением размера
+Все делается точно так же, только вам необходимо будет использовать скрипт ниже, а так же просто задавать размеры HTML элемента. И не забудьте поменять ссылку с своим видео.
+<div id="videoCover">
+  <video style="object-fit: cover; background-size: cover; width: 56%; height: 59%; border-radius: 8px;" preload="auto" playsinline autoplay loop muted>
+    <source src="https://www.youtube.com/watch?v=JouMAHQXx-g" type="video/mp4">
+  </video>
+</div>
+
+<script>
+$(document).ready(() => {
+  let width = $(window).width();
+  let height = $(window).height();
+  $("#videoCover")
+    .width(width)
+    .height(height);
+});
+
+$(window).resize(() => {
+  let width = $(window).width();
+  let height = $(window).height();
+  $("#videoCover")
+    .width(width)
+    .height(height);
+});
+</script>
+
+<style>
+#videoCover video, div#videoCover {
+    width: 100%!important;
+    height: auto!important;
+}
+</style>
