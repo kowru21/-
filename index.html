@@ -1,6 +1,6 @@
 <div id="videoBackground">
   <video style="object-fit: cover; background-size: cover; width: 100%; height: 100%;" preload="auto" playsinline autoplay loop muted>
-    <source src="https://dl.dropboxusercontent.com/s/5qym13usc9vu20z/ezgif.com-resize.mp4?dl=0" type="video/mp4">
+    <source src="https://www.youtube.com/watch?v=JouMAHQXx-g" type="video/mp4">
   </video>
 </div>
 
@@ -23,12 +23,13 @@ $(window).resize(() => {
 </script>
 Добавляем видео с пропорциональным изменением размера
 Все делается точно так же, только вам необходимо будет использовать скрипт ниже, а так же просто задавать размеры HTML элемента. И не забудьте поменять ссылку с своим видео.
+<body>
 <div id="videoCover">
   <video style="object-fit: cover; background-size: cover; width: 56%; height: 59%; border-radius: 8px;" preload="auto" playsinline autoplay loop muted>
     <source src="https://www.youtube.com/watch?v=JouMAHQXx-g" type="video/mp4">
   </video>
 </div>
-
+</body>
 <script>
 $(document).ready(() => {
   let width = $(window).width();
